@@ -103,17 +103,6 @@ export default function LoginPage() {
               {loading ? 'Signing in...' : 'Sign In'}
             </button>
           </form>
-
-          {/* Demo Credentials */}
-          <div className="mt-6 p-4 bg-bg-highlight rounded-lg">
-            <p className="text-sm text-text-secondary mb-2">
-              <strong>Demo Credentials:</strong>
-            </p>
-            <p className="text-xs text-text-muted">
-              Email: admin@tavonga.com<br />
-              Password: admin123
-            </p>
-          </div>
         </div>
       </div>
     </div>
