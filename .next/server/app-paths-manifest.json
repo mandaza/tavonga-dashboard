@@ -1,0 +1,20 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/client-profile/page": "app/client-profile/page.js",
+  "/clients/page": "app/clients/page.js",
+  "/behaviors/page": "app/behaviors/page.js",
+  "/analytics/page": "app/analytics/page.js",
+  "/login/page": "app/login/page.js",
+  "/activities/page": "app/activities/page.js",
+  "/profile/page": "app/profile/page.js",
+  "/profile/edit/page": "app/profile/edit/page.js",
+  "/goals/page": "app/goals/page.js",
+  "/page": "app/page.js",
+  "/reports/page": "app/reports/page.js",
+  "/settings/page": "app/settings/page.js",
+  "/client-profile/edit/page": "app/client-profile/edit/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/shifts/page": "app/shifts/page.js",
+  "/users/page": "app/users/page.js",
+  "/scheduler/page": "app/scheduler/page.js"
+}

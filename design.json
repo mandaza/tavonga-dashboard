@@ -1,0 +1,144 @@
+{
+    "elementStyling": {
+      "background": {
+        "primary": "#FFFFFF",
+        "card": "#F9F5F4",
+        "highlightSection": "#EEF8F7",
+        "appBar": "#FFFFFF"
+      },
+      "text": {
+        "primary": "#000000",
+        "secondary": "#6D6D6D",
+        "muted": "#A3A3A3",
+        "positive": "#4ECDC4",
+        "danger": "#FF6B6B"
+      },
+      "cards": {
+        "background": "#F9F5F4",
+        "border": "#E0E0E0",
+        "shadow": "0px 4px 12px rgba(0, 0, 0, 0.05)",
+        "radius": "20px",
+        "icons": {
+          "fill": "#FFFFFF",
+          "container": "#4ECDC4",
+          "background": "none"
+        },
+        "text": {
+          "title": "#000000",
+          "subtext": "#6D6D6D"
+        }
+      },
+      "buttons": {
+        "primary": {
+          "background": "#4ECDC4",
+          "text": "#FFFFFF",
+          "hover": {
+            "background": "#3DB9B2"
+          },
+          "active": {
+            "background": "#37A29F"
+          },
+          "disabled": {
+            "background": "#A3A3A3",
+            "text": "#FFFFFF"
+          }
+        },
+        "secondary": {
+          "background": "#F0F0F0",
+          "text": "#000000",
+          "hover": {
+            "background": "#E5E5E5"
+          }
+        }
+      },
+      "icons": {
+        "default": {
+          "fill": "#000000",
+          "background": "#F4F4F4"
+        },
+        "profile": {
+          "container": "#E0E0E0",
+          "icon": "#000000"
+        }
+      },
+      "navigation": {
+        "icon": "#A3A3A3",
+        "activeIcon": "#4ECDC4",
+        "background": "#FFFFFF",
+        "shadow": "0px -2px 8px rgba(0, 0, 0, 0.04)"
+      },
+      "charts": {
+        "lineColor": "#4ECDC4",
+        "gridColor": "#E5E5E5",
+        "background": "#FFFFFF",
+        "pointHighlight": "#78EFEF"
+      },
+      "shadows": {
+        "card": "0px 4px 12px rgba(0, 0, 0, 0.05)",
+        "floatingButton": "0px 6px 20px rgba(0, 0, 0, 0.1)"
+      },
+      "borders": {
+        "default": "#E0E0E0",
+        "input": "#D3D3D3"
+      },
+      "hoverStates": {
+        "card": {
+          "shadow": "0px 6px 16px rgba(0, 0, 0, 0.08)"
+        },
+        "button": {
+          "transform": "scale(1.02)",
+          "transition": "0.2s ease"
+        }
+      }
+    },
+    "componentStates": {
+      "button": {
+        "default": {
+          "background": "#4ECDC4",
+          "text": "#FFFFFF"
+        },
+        "hover": {
+          "background": "#3DB9B2"
+        },
+        "active": {
+          "background": "#37A29F"
+        },
+        "disabled": {
+          "background": "#A3A3A3",
+          "text": "#FFFFFF"
+        }
+      },
+      "card": {
+        "default": {
+          "background": "#F9F5F4",
+          "shadow": "0px 4px 12px rgba(0, 0, 0, 0.05)"
+        },
+        "hover": {
+          "shadow": "0px 6px 16px rgba(0, 0, 0, 0.08)"
+        }
+      },
+      "navigation": {
+        "default": {
+          "icon": "#A3A3A3"
+        },
+        "active": {
+          "icon": "#4ECDC4"
+        }
+      }
+    },
+    "rules": {
+      "DO NOT": [
+        "Do not apply card gradient or shadows to icons.",
+        "Do not use button gradient backgrounds on card containers.",
+        "Do not apply navigation icon color to primary buttons.",
+        "Do not use muted text color (#A3A3A3) for primary headlines."
+      ],
+      "CONTEXTUAL": [
+        "Card containers use solid #F9F5F4 background with soft shadows.",
+        "Icons inside cards use white fill with colored icon containers.",
+        "Navigation icons are monochrome with active state color highlights.",
+        "Charts have line color #4ECDC4 with light grid backgrounds."
+      ]
+    }
+  }
+  

@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-bg-primary text-text-primary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-btn-primary text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-btn-primary-hover active:bg-btn-primary-active disabled:bg-btn-primary-disabled disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply bg-btn-secondary text-text-primary px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-btn-secondary-hover;
+  }
+  
+  .card {
+    @apply bg-card-bg border border-card-border rounded-card shadow-card transition-all duration-200 hover:shadow-card-hover;
+  }
+  
+  .nav-icon {
+    @apply text-nav-icon transition-colors duration-200;
+  }
+  
+  .nav-icon-active {
+    @apply text-nav-icon-active;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-btn-primary focus:border-transparent;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 hover:bg-bg-highlight cursor-pointer;
+  }
+  
+  .sidebar-item-active {
+    @apply bg-bg-highlight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} 
