@@ -1,7 +1,10 @@
 // Environment configuration
 export const config = {
-  // API Configuration
-  apiUrl: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1',
+  // API Configuration - Use HTTPS for production
+  apiUrl: process.env.NEXT_PUBLIC_API_URL || 
+         (process.env.NODE_ENV === 'production' 
+           ? 'https://jellyfish-app-ho48c.ondigitalocean.app/api/v1'
+           : 'http://localhost:8000/api/v1'),
   
   // Environment
   environment: process.env.NEXT_PUBLIC_ENVIRONMENT || 'development',

@@ -2,6 +2,7 @@
 
 import { SWRConfig } from 'swr'
 import { ReactNode } from 'react'
+import { config } from '@/lib/config'
 
 interface SWRProviderProps {
   children: ReactNode
@@ -12,7 +13,12 @@ export default function SWRProvider({ children }: SWRProviderProps) {
     <SWRConfig
       value={{
         fetcher: async (url: string) => {
-          const response = await fetch(url, {
+          // Convert relative URLs to absolute URLs using the configured API base
+          const absoluteUrl = url.startsWith('/api/v1') 
+            ? `${config.apiUrl.replace('/api/v1', '')}${url}`
+            : url
+
+          const response = await fetch(absoluteUrl, {
             headers: {
               'Authorization': `Bearer ${localStorage.getItem('access_token')}`,
               'Content-Type': 'application/json',

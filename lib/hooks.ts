@@ -1,10 +1,16 @@
 import useSWR, { mutate } from 'swr'
 import { apiClient } from './api'
+import { config } from './config'
 
 // Generic fetcher function
 const fetcher = async (url: string) => {
   try {
-    const response = await fetch(url, {
+    // Convert relative URLs to absolute URLs using the configured API base
+    const absoluteUrl = url.startsWith('/api/v1') 
+      ? `${config.apiUrl.replace('/api/v1', '')}${url}`
+      : url
+
+    const response = await fetch(absoluteUrl, {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('access_token')}`,
         'Content-Type': 'application/json',
